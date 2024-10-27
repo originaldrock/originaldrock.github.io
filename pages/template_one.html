@@ -3,67 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Blog</title>
+    <title>My Simple Blog</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
+            background-color: #f9f9f9;
         }
         .header, .footer {
             padding: 20px;
             text-align: center;
-            background-color: #333;
+            background-color: #5A67D8;
             color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .container {
             display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 20px auto;
             padding: 20px;
+            gap: 20px;
         }
         .content {
             flex: 3;
-            padding: 10px;
+            min-width: 60%;
         }
         .sidebar {
             flex: 1;
-            padding: 10px;
-            background-color: #f4f4f4;
+            min-width: 30%;
+            background-color: #f0f4f8;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
         .post {
-            border-bottom: 1px solid #ddd;
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
             margin-bottom: 20px;
-            padding-bottom: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
         .post h2 {
-            color: #4CAF50;
+            color: #5A67D8;
+            margin-top: 0;
+        }
+        .post p {
+            line-height: 1.6;
+        }
+        .sidebar h3, .footer {
+            color: #4A5568;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .sidebar ul li a {
+            color: #5A67D8;
+            text-decoration: none;
+        }
+        .footer {
+            font-size: 0.9em;
+            background: #333;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>My Simple Blog</h1>
+        <h1>Welcome to My Blog</h1>
     </div>
     <div class="container">
         <div class="content">
             <div class="post">
-                <h2>Blog Post Title</h2>
-                <p>Posted on January 1, 2023</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                <h2>Exploring Web Development</h2>
+                <p><em>Posted on October 1, 2023</em></p>
+                <p>Web development is an exciting journey of creativity and problem-solving...</p>
             </div>
             <div class="post">
-                <h2>Another Blog Post</h2>
-                <p>Posted on February 1, 2023</p>
-                <p>Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+                <h2>My First JavaScript Project</h2>
+                <p><em>Posted on September 15, 2023</em></p>
+                <p>JavaScript is a versatile language that brings web pages to life...</p>
             </div>
         </div>
         <div class="sidebar">
             <h3>About Me</h3>
-            <p>I'm a blogger sharing my journey with the world.</p>
-            <h3>Links</h3>
+            <p>I'm a passionate blogger sharing my journey in web development.</p>
+            <h3>Navigation</h3>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="about.html">About Me</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
