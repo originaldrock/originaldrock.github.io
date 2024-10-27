@@ -3,7 +3,6 @@
 ###########
 
 - [] Design Page Layout, Create Template
-- [] Add Blog and About Me pages
 - [] Add content to site
 - [] Publish/review
 - [] Deactivate domain wordpress page - My Account/Hosting/Settings
