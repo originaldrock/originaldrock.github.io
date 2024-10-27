@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .header, .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        .content {
+            flex: 3;
+            padding: 10px;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+        .post {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+        .post h2 {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My Simple Blog</h1>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="post">
+                <h2>Blog Post Title</h2>
+                <p>Posted on January 1, 2023</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            </div>
+            <div class="post">
+                <h2>Another Blog Post</h2>
+                <p>Posted on February 1, 2023</p>
+                <p>Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h3>About Me</h3>
+            <p>I'm a blogger sharing my journey with the world.</p>
+            <h3>Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2023 My Simple Blog
+    </div>
+</body>
+</html>
