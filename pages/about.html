@@ -1,58 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-        .header, .footer {
-            padding: 20px;
-            text-align: center;
-            background-color: #5A67D8;
-            color: white;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .content h1 {
-            color: #5A67D8;
-        }
-        .content p {
-            line-height: 1.8;
-            color: #4A5568;
-        }
-        .footer {
-            font-size: 0.9em;
-            background: #333;
-        }
-    </style>
+<title>ABOUT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="static/css/w3.css">
+<link rel="stylesheet" type="text/css" href="static/css/ralewayfont.css">
+<link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
 </head>
-<body>
-    <div class="header">
-        <h1>About Me</h1>
-    </div>
-    <div class="container content">
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="static/images/hbfs.png" style="width:45%;" class="image" class="w3-round"><br><br>
+    <h4><b>OriginalDrock Web</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="/" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>HOME</a>
+    <a href="pages/about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-chain fa-fw w3-margin-right"></i>ABOUT ME</a>  
+    <a href="pages/blog" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-chain fa-fw w3-margin-right"></i>BLOG</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+    <!-- Header -->
+    <header id="OriginalDrock">
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+        <div class="w3-container">
+        <h1>Welcome</h1>
+        </div>
+    </header>
+   
+    <div class="w3-container w3-padding-large w3-grey">
         <h1>Hello! I'm a Web Enthusiast</h1>
         <p>Welcome to my blog. I’m passionate about web development and love exploring new technologies. I started this blog to share my experiences, projects, and insights with other aspiring developers.</p>
         <p>My journey in coding began with curiosity, and today it’s a part of who I am. When I’m not coding, you’ll find me reading, hiking, or experimenting with new recipes in the kitchen.</p>
         <p>Thanks for visiting, and I hope you find my content helpful and inspiring!</p>
     </div>
-    <div class="footer">
-        &copy; 2023 My Simple Blog
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-dark-grey">
+    <div class="w3-row-padding">
+
     </div>
+    </footer>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+
+  </div>
+  </footer>
+
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
 </body>
 </html>
